@@ -1,0 +1,26 @@
+/* Tar bort default margin */
+  * {
+    margin: 0;
+  }
+
+  /* För skärmar som är 640px eller mindre */
+  @media screen and (width < 640px) {
+    body {
+      background-color: blue;
+    }
+  }
+
+    /* För skärmar som är större än eller lika med 640px */
+  @media screen and (width  >= 640px) {
+    body {
+      background-color: red;
+    }
+  }
+
+    /* För skärmar som är större än eller lika med 1024px */
+  @media screen and (width >= 1024px) {
+    body {
+      background-color: olive;
+    }
+  }
+
