@@ -1,20 +1,79 @@
-/* Tar bort default margin */
+/* Importerar Google Fonten Jost */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Tar bort default margin - en CSS reset */
   * {
     margin: 0;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
+
+  body {
+    min-height: 100%;
+  }
+
+  h1 {
+    font-weight: 700;
+  }
+
+/*Alla webbläsare kan inte tolka main enligt W3C, därför behöver vi addera display: block. */
+  main {
+    display: block;
+    background-color: thistle;
+  }
+
+  nav {
+    background-color: gainsboro;
+    display: flex;
+    justify-content: flex-start
+  }
+
+  nav > ul {
+    list-style-type: none;
+  }
+
+  .search-container  {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin: 8px;
+    background-color: pink;
+  }
+
+  .icons-container {
+      display: flex;
+      /* padding: 5px; */
+    }
 
   /* För skärmar som är 640px eller mindre */
   @media screen and (width < 640px) {
     body {
-      background-color: blue;
+      background-color: rgb(57, 77, 189);
     }
+
+    img {
+        margin: 10px;
+        }    
   }
 
     /* För skärmar som är större än eller lika med 640px */
   @media screen and (width  >= 640px) {
     body {
-      background-color: red;
+      background-color: gray;
     }
+
+    figure {
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 370px;
+      }
+    
+      img {
+        width: 40%;
+      }
+
   }
 
     /* För skärmar som är större än eller lika med 1024px */
@@ -23,4 +82,3 @@
       background-color: olive;
     }
   }
-
