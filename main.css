@@ -1,84 +1,161 @@
 /* Importerar Google Fonten Jost */
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Tar bort default margin - en CSS reset */
-  * {
-    margin: 0;
-    font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+* {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: blue;
+}
+
+header {
+  border: 2px solid black;
+}
+
+/* Centrerar innehållet på sidan och sätter direktionen till kolumner istället för rader */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/* Överskrider Bootstraps default länkarstilar med !important*/
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+/* Min-height gör att innehållet anpassar sig efter ytan
+om det inte är minimum 300px */
+/* header {
+  min-height: 300px;
+} */
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 5px;
+  gap: 10px;
+}
+
+.search > input {
+  display: inline;
+  width: 80%;
+  border-radius: 50px;
+}
+
+.icons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.icons {
+  font-size: 1.5em;
+}
+
+/* Styling för navigationen */
+nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+ul {
+  list-style-type: none;
+  border: 1px solid black;
+}
+
+/* Slut på styling för navigationen */
+
+/* Centrerar innehållet i hero-sektionen. */
+.hero {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.hero > div {
+  border: 1px solid black;
+  /* flex-grow: 1; */
+}
+
+/* Styling för hero-bild. 
+Max-width gör så att bilderna inte flödar över det horisontella utrymmet. */
+.hero > div img {
+  max-width: 100%;
+}
+
+/* Skapar en en-kolumnsgrid */
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  border: 2px solid black;
+}
+
+.product-grid > div {
+  border: 2px solid black;
+}
+
+.product-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* .product-description {
+  display: flex;
+} */
+
+/* .product-description > div {
+} */
+
+/* För skärmar som är större än eller lika med 640px */
+@media (min-width: 640px) {
+  /* Skapar en två-kolumnsgrid */
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
-  body {
-    min-height: 100%;
+  .accordion {
+    display: none;
   }
 
-  h1 {
-    font-weight: 700;
+  header > img {
+    width: 40%;
   }
 
-/*Alla webbläsare kan inte tolka main enligt W3C, därför behöver vi addera display: block. */
-  main {
-    display: block;
-    background-color: thistle;
+  p {
+    font-size: 1em;
   }
+}
 
-  nav {
-    background-color: gainsboro;
-    display: flex;
-    justify-content: flex-start
+/* För skärmar som är större än eller lika med 1024px */
+@media (min-width: 1024px) {
+  /* Skapar en fyra-kolumnsgrid */
+  .product-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
-  nav > ul {
-    list-style-type: none;
-  }
-
-  .search-container  {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    margin: 8px;
-    background-color: pink;
-  }
-
-  .icons-container {
-      display: flex;
-      /* padding: 5px; */
-    }
-
-  /* För skärmar som är 640px eller mindre */
-  @media screen and (width < 640px) {
-    body {
-      background-color: rgb(57, 77, 189);
-    }
-
-    img {
-        margin: 10px;
-        }    
-  }
-
-    /* För skärmar som är större än eller lika med 640px */
-  @media screen and (width  >= 640px) {
-    body {
-      background-color: gray;
-    }
-
-    figure {
-        display: flex;
-        justify-content: flex-start;
-        margin-right: 370px;
-      }
-    
-      img {
-        width: 40%;
-      }
-
-  }
-
-    /* För skärmar som är större än eller lika med 1024px */
-  @media screen and (width >= 1024px) {
-    body {
-      background-color: olive;
-    }
-  }
+}

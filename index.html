@@ -5,50 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Freaky Fashion</title>
     <link rel="stylesheet" href="main.css" type="text/css" />
+    
+    <!-- Importerar FontAwesome-ikoner -->
     <script
       src="https://kit.fontawesome.com/9604976d4b.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Importerar Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <figure>
-        <img
-          src="https://placehold.co/600x200"
-          alt="Logo image"
-          width="600px"
-          height="200px"
-        />
-      </figure>
 
-      <!-- Sökruta och knappar -->
-      <div class="search-container">
-        <input type="text" placeholder="Sök produkt" />
-        <figure>
+    <main class="wrapper">
+
+      <!-- Header-bild samt meny -->
+      <header>
+          <img
+            src="https://placehold.co/600x200?text=Freaky+Fashion"
+            alt="Logo image"
+            width="600px"
+            height="200px"
+          />
+
+        <!-- Sökruta och knappar -->
+        <div class="search">
+          <input type="text" placeholder="Sök produkt" />
           <div class="icons-container">
-            <i class="fa-solid fa-heart"></i>
+            <div class="icons">
+              <a href="#"><i class="fa-solid fa-heart"></i></a>
+            </div>
+            <div class="icons">
+              <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+            </div>
           </div>
-          <div class="icons-container">
-            <i class="fa-solid fa-basket-shopping"></i>
-          </div>
-        </figure>
-      </div>
+        </div>
+      <!-- Slut på sökruta och header -->
+
+      <!-- Start på navigation -->
+      <nav aria-label="primary-navigation">
+        <ul>
+          <a href="#"><li>Nyheter</li></a>
+          <a href="#"><li>Topplistan</li></a>
+          <a href="#"><li>Rea</li></a>
+          <a href="#"<li>Kampanjer</li></a>
+        </ul>
+      </nav>
+      <!-- Slut på navigation -->
+       
     </header>
-    <!-- Slut på sökruta och header -->
+    <!-- Slut på header -->
 
-    <!-- Start på navigation -->
-    <nav aria-label="primary-navigation">
-      <ul>
-        <li>Nyheter</li>
-        <li>Topplistan</li>
-        <li>Rea</li>
-        <li>Kampanjer</li>
-      </ul>
-    </nav>
-    <!-- Slut på navigation -->
-    <main>
       <!-- Hero-modul -->
-      <div class="container">
+      <section class="hero">
         <div>
           <figure>
             <img
@@ -57,6 +67,7 @@
               width="500px"
               height="400px"
             />
+          </figure>
             <h1>Lorem ipsum dolor</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
@@ -64,11 +75,239 @@
               rerum reprehenderit quam, laborum, quaerat illo amet obcaecati
               veritatis. Voluptatibus, vero at.
             </p>
-            <p>Ikon med "Nyhet"</p>
-          </figure>
+        </div>
+      </section>
+      <!-- Slut på hero -->
+
+      <!-- Start av Populära produkter -->
+      <section class="product-grid"> 
+        <div class="product-card">
+          <button class="btn">Nyhet</button>
+            <a href="/product-details.html">
+              <img
+              src=""
+              alt="Hero image"
+              width="500px"
+              height="700px"
+            />
+          </a>
+            <a href="#"><div class="icons">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            </div>
+            <div class="product-description">
+              <div>
+          <h2>Svart T-shirt</h2>
+          <h2>199 sek</h2>
+          <p>Levis</p>
+        </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <button class="btn">Nyhet</button>
+            <a href="/product-details.html">
+              <img
+              src=""
+              alt="Hero image"
+              width="500px"
+              height="700px"
+            />
+          </a>
+            <a href="#"><div class="icons">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            </div>
+          <div class="product-description">
+          <h2>Svart T-shirt</h2>
+          <h2>199 sek</h2>
+          <p>Levis</p>
+        </div>
+        </div>
+        <div class="product-card">
+          <button class="btn">Nyhet</button>
+            <a href="/product-details.html">
+              <img
+              src=""
+              alt="Hero image"
+              width="500px"
+              height="700px"
+            />
+          </a>
+            <a href="#"><div class="icons">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            </div>
+            <div class="product-description">
+              <h2>Svart T-shirt</h2>
+              <h2>199 sek</h2>
+              <p>Levis</p>
+            </div>
+        </div>
+        <div class="product-card">
+          <button class="btn">Nyhet</button>
+            <a href="/product-details.html">
+              <img
+              src=""
+              alt="Hero image"
+              width="500px"
+              height="700px"
+            />
+          </a>
+            <a href="#"><div class="icons">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            </div>
+            <div class="product-description">
+              <h2>Svart T-shirt</h2>
+              <h2>199 sek</h2>
+              <p>Levis</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <a href="/product-details.html">
+              <img
+              src=""
+              alt="Hero image"
+              width="500px"
+              height="700px"
+            />
+          </a>
+            <a href="#"><div class="icons">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            </div>
+            <div class="product-description">
+              <h2>Svart T-shirt</h2>
+              <h2>199 sek</h2>
+              <p>Levis</p>
+            </div>
+        </div>
+        <div class="product-card">
+          <button class="btn">Nyhet</button>
+            <a href="/product-details.html">
+              <img
+              src=""
+              alt="Hero image"
+              width="500px"
+              height="700px"
+            />
+          </a>
+            <a href="#"><div class="icons">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            </div>
+            <div class="product-description">
+              <h2>Svart T-shirt</h2>
+              <h2>199 sek</h2>
+              <p>Levis</p>
+            </div>
+        </div>
+        <div class="product-card">
+          <button class="btn">Nyhet</button>
+
+            <a href="/product-details.html">
+              <img
+              src=""
+              alt="Hero image"
+              width="500px"
+              height="700px"
+            />
+          </a>
+            <a href="#"><div class="icons">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            </div>
+            <div class="product-description">
+              <h2>Svart T-shirt</h2>
+              <h2>199 sek</h2>
+              <p>Levis</p>
+            </div>
+        </div>
+        <div class="product-card">
+          <button class="btn">Nyhet</button>
+        <a href="/product-details.html">
+              <img
+              src=""
+              alt="Hero image"
+              width="500px"
+              height="700px"
+            />
+          </a>
+            <a href="#"><div class="icons">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            </div>
+            <div class="product-description">
+              <h2>Svart T-shirt</h2>
+              <h2>199 sek</h2>
+              <p>Levis</p>
+            </div>
+        </div>
+      </section>
+      <!-- Slut av Populära produkter -->
+
+  
+    <aside>
+      <i class="fa-solid fa-heart"></i><h3>Gratis frakt och returer</h3>
+      <i class="fa-solid fa-heart"></i><h3>Expressfrakt</h3>
+      <i class="fa-solid fa-heart"></i><h3>Säkra betalningar</h3>
+      <i class="fa-solid fa-heart"></i><h3>Nyheter varje dag</h3>
+    </aside>
+    
+    <!-- Plats för accordion -->
+    <section class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Shopping
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <nav>
+            <ul>
+            <a href="#"><li>Vinterjackor</li></a>
+            <a href="#"><li>Pufferjackor</li></a>
+            <a href="#"><li>Kappa</li></a>
+            <a href="#"><li>Trenchcoats</li></a>
+          </ul>
+        </nav>
+          </div>
         </div>
       </div>
-      <!-- Slut på hero -->
-    </main>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Mina Sidor
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate explicabo libero nisi in sint placeat consectetur magnam? Consequuntur minus quia esse distinctio consectetur autem cumque magni ratione, sit rerum, quisquam odio dolores nesciunt non deleniti quod qui sapiente illum laborum tempore laudantium at reprehenderit! Soluta, tempore reiciendis aut culpa eaque assumenda maxime sapiente, fuga quae dolores voluptatum rerum explicabo tenetur accusantium accusamus. Animi tempore corporis sit, ad sed ullam officia. Velit dolore necessitatibus, quasi, error iure reprehenderit impedit nemo, aut soluta expedita aspernatur obcaecati dolorum similique reiciendis odio eos commodi blanditiis natus quis ex nostrum officia cum possimus veniam? Officiis?
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Kundtjänst
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate est et dolorum tempora molestiae optio exercitationem sint inventore facilis. Ex reiciendis odio voluptatum nostrum fuga. Ad animi mollitia aut velit aperiam culpa quidem harum debitis, commodi voluptate veritatis beatae sit asperiores consequatur quibusdam doloremque sed ab veniam sunt maiores. Officia eaque eveniet, inventore, accusamus natus iusto veniam recusandae maxime excepturi dignissimos error eligendi rem et id! Modi magni accusamus excepturi dolor magnam. Dolorum quas reprehenderit at iusto eos tenetur. Error vitae, laboriosam aliquam placeat magni veritatis corrupti ullam officiis molestiae reiciendis, quod est amet modi laudantium rem! Explicabo, a itaque!
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Slut på accordion -->
+
+    </div>
+    <footer>
+      <div class="container">
+      Freaky Fashion
+      </div>
+    </footer>
+  </main>
   </body>
 </html>
