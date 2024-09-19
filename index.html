@@ -40,7 +40,7 @@
             </div>
           </div>
         </form>
-      <!-- Slut på sökruta och header -->
+      <!-- Slut på sökruta -->
 
       <!-- Start på navigation -->
       <nav aria-label="primary-navigation">
@@ -51,11 +51,11 @@
           <li><a href="#">Kampanjer</a></li>
         </ul>
       </nav>
-      <!-- Slut på navigation -->
     </header>
-    <!-- Slut på header -->
+    <!-- Slut på nav och header -->
 
-        <main class="wrapper">
+
+      <main>
       <!-- Hero-modul -->
       <section class="hero">
         <div>
@@ -80,7 +80,6 @@
 
       <!-- Start av Populära produkter -->
       <section class="product-grid"> 
-
         <article class="product-card">
           <a href="/product-details.html">
             <img src="https://placehold.co/400x600" alt="Foto på en svart T-shirt" width="400px" height="600px" />
@@ -242,14 +241,19 @@
       <!-- Slut av Populära produkter -->
 
   
-    <aside>
-      <i class="fa-solid fa-heart"></i><h3>Gratis frakt och returer</h3>
-      <i class="fa-solid fa-heart"></i><h3>Expressfrakt</h3>
-      <i class="fa-solid fa-heart"></i><h3>Säkra betalningar</h3>
-      <i class="fa-solid fa-heart"></i><h3>Nyheter varje dag</h3>
-    </aside>
+    <div class="store-information">
+      <div><i class="fa-solid fa-earth-americas"></i><h3>Gratis frakt och returer</h3></div>
+      <div><i class="fa-solid fa-plane"></i><h3>Expressfrakt</h3></div>
+      <div><i class="fa-solid fa-shield-halved"></i><h3>Säkra betalningar</h3></div>
+      <div><i class="fa-regular fa-face-smile"></i><h3>Nyheter varje dag</h3></div>
+    </div>
+    </main>
     
-    <!-- Plats för accordion -->
+
+    </div>
+    <footer>
+
+          <!-- Plats för accordion -->
     <section class="accordion accordion-flush" id="accordionFlushExample">
       <div class="accordion-item">
         <h2 class="accordion-header">
@@ -257,14 +261,14 @@
             Shopping
           </button>
         </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div id="flush-collapseOne" class="accordion-collapse collapse-show" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
             <nav>
             <ul>
-            <a href="#"><li>Vinterjackor</li></a>
-            <a href="#"><li>Pufferjackor</li></a>
-            <a href="#"><li>Kappa</li></a>
-            <a href="#"><li>Trenchcoats</li></a>
+            <li><a href="#">Vinterjackor</a></li>
+            <li><a href="#">Pufferjackor</a></li>
+            <li><a href="#">Kappa</a></li>
+           <li><a href="#">Trenchcoats</a></li>
           </ul>
         </nav>
           </div>
@@ -297,12 +301,9 @@
     </section>
     <!-- Slut på accordion -->
 
-    </div>
-    <footer>
       <div class="container">
-      Freaky Fashion
+      © Freaky Fashion
       </div>
     </footer>
-  </main>
   </body>
 </html>

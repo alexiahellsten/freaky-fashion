@@ -30,11 +30,11 @@ body {
 } */
 
 /* Centrerar innehållet på sidan och sätter direktionen till kolumner istället för rader */
-.wrapper {
+main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
   gap: 10px;
 }
 
@@ -76,7 +76,7 @@ img {
 .search {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
   margin: 10px;
   padding: 5px;
   gap: 10px;
@@ -125,7 +125,6 @@ ul > a {
 }
 
 .hero > div {
-  /* border: 1px solid black; */
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -158,13 +157,9 @@ Max-width gör så att bilderna inte flödar över det horisontella utrymmet. */
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
   margin: 10px;
 }
-/* 
-Ger ramar åt alla produkt-kort */
-/* .product-grid > div {
-} */
 
 /* 
 Ger ramar åt alla produkt-kort samt centrerar innehållet */
@@ -173,7 +168,6 @@ Ger ramar åt alla produkt-kort samt centrerar innehållet */
   align-items: center;
   flex-direction: column;
   width: 100%;
-  border: 1px solid rgb(173, 173, 173);
 }
 
 .product-card > img {
@@ -193,7 +187,35 @@ Ger ramar åt alla produkt-kort samt centrerar innehållet */
 
 .brand-name {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
+}
+
+.store-information {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.store-information > div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.store-information > div > .fa-solid,
+.fa-regular {
+  font-size: 2em;
+}
+
+.store-information h3 {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+footer {
+  text-align: center;
 }
 
 /* För skärmar som är större än eller lika med 640px */
