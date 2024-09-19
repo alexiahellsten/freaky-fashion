@@ -14,10 +14,9 @@ body {
   margin: 10px;
 }
 
-header {
-  /* border: 2px solid black; */
-  /* background-color: thistle; */
-}
+/* header {
+
+} */
 
 .header-image {
   display: flex;
@@ -142,6 +141,18 @@ Max-width gör så att bilderna inte flödar över det horisontella utrymmet. */
   max-width: 100%;
 }
 
+/* .image-container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.text-overlay {
+  position: absolute;
+  z-index: 2;
+} */
+
 /* Skapar en en-kolumnsgrid */
 .product-grid {
   display: grid;
@@ -152,8 +163,8 @@ Max-width gör så att bilderna inte flödar över det horisontella utrymmet. */
 }
 /* 
 Ger ramar åt alla produkt-kort */
-.product-grid > div {
-}
+/* .product-grid > div {
+} */
 
 /* 
 Ger ramar åt alla produkt-kort samt centrerar innehållet */
@@ -162,14 +173,28 @@ Ger ramar åt alla produkt-kort samt centrerar innehållet */
   align-items: center;
   flex-direction: column;
   width: 100%;
+  border: 1px solid rgb(173, 173, 173);
+}
+
+.product-card > img {
+  max-width: 100%;
+}
+
+.product-description-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
 }
 
 .product-description {
   display: flex;
+  justify-content: space-between;
 }
 
-/* .product-description > div {
-} */
+.brand-name {
+  display: flex;
+  justify-content: flex-start;
+}
 
 /* För skärmar som är större än eller lika med 640px */
 @media (min-width: 640px) {
