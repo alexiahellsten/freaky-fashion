@@ -142,7 +142,7 @@ Max-width gör så att bilderna inte flödar över det horisontella utrymmet. */
 
 /* .image-container {
   display: flex;
-  justify-content: flex-end;
+  jutify-content: flex-end;
   position: relative;
   z-index: 1;
 }
@@ -189,6 +189,19 @@ Ger ramar åt alla produkt-kort samt centrerar innehållet */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.new-products {
+  position: relative;
+}
+
+.new-products > span {
+  position: absolute;
+  background-color: black;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .store-information {
