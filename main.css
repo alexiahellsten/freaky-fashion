@@ -7,12 +7,11 @@
   font-family: "Jost", sans-serif;
   font-weight: 400;
   font-style: normal;
+  line-height: 1.5;
 }
 
-body {
-  width: 100%;
-  margin: 10px;
-}
+/* body {
+} */
 
 /* header {
 
@@ -90,13 +89,13 @@ img {
   padding: 5px;
 }
 
-.icons-container {
+.search-icons-container {
   display: flex;
   gap: 10px;
   /* justify-content: space-around; */
 }
 
-.icons {
+.search-icons {
   font-size: 1.5em;
 }
 
@@ -104,6 +103,7 @@ img {
 nav {
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
 }
 
 ul {
@@ -199,9 +199,20 @@ Ger ramar åt alla produkt-kort samt centrerar innehållet */
   position: absolute;
   background-color: black;
   color: white;
-  margin: 10px;
+  margin: 15px;
   padding: 10px;
   border-radius: 8px;
+}
+
+/* .product-icons-container {
+display: grid;
+grid-template-columns: 1fr;
+} */
+
+.product-card > .heart {
+  font-size: 1.5em;
+  background-color: blue;
+  margin-left: 370px;
 }
 
 .store-information {
@@ -233,6 +244,75 @@ footer {
 
 /* För skärmar som är större än eller lika med 640px */
 @media (min-width: 640px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .header-image {
+    /* justify-content: flex-start; */
+    display: inline-block;
+    max-width: 40%;
+    flex-grow: 1;
+  }
+
+  .header-image > img {
+    max-width: 90%;
+  }
+
+  /* header form > input,
+  header form > div {
+    display: inline-block;
+  } */
+
+  .search {
+    display: inline-block;
+    flex-grow: 1;
+    /* margin-left: 20px; */
+  }
+
+  .search > input {
+    display: inline-block;
+    max-width: 70%;
+  }
+
+  .search-icons-container {
+    /* display: inline-block; */
+    /* flex-wrap: nowrap; */
+    justify-content: flex-end;
+    /* align-items: flex-end; */
+  }
+
+  .break {
+    width: 100%;
+  }
+  /* .search-icons-container > a {
+  } */
+
+  nav {
+    width: 100%;
+  }
+
+  nav > ul {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+  }
+  /* 
+  nav > ul > li {
+    flex-direction: row;
+  } */
+
+  /* form {
+    display: block;
+  } */
+
+  .hero > div {
+    width: 100%;
+  }
   /* Skapar en två-kolumnsgrid */
   .product-grid {
     grid-template-columns: 1fr 1fr;
@@ -242,12 +322,14 @@ footer {
     display: none;
   }
 
-  header > img {
-    max-width: 40%;
-  }
-
   p {
     font-size: 1em;
+  }
+
+  .store-information,
+  footer {
+    background-color: rgb(223, 223, 223);
+    padding: 24px;
   }
 }
 
