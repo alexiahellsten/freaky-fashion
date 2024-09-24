@@ -83,7 +83,6 @@ img {
 
 .search > input {
   display: inline;
-  width: 80%;
   border-radius: 50px;
   font-size: 1.1em;
   padding: 5px;
@@ -161,6 +160,10 @@ Max-width gör så att bilderna inte flödar över det horisontella utrymmet. */
   margin: 10px;
 }
 
+.position-container {
+  position: relative;
+}
+
 /* 
 Ger ramar åt alla produkt-kort samt centrerar innehållet */
 .product-card {
@@ -168,6 +171,7 @@ Ger ramar åt alla produkt-kort samt centrerar innehållet */
   align-items: center;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 .product-card > img {
@@ -185,35 +189,55 @@ Ger ramar åt alla produkt-kort samt centrerar innehållet */
   justify-content: space-between;
 }
 
+.product-description h2 {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.brand-name p {
+  font-size: 1rem;
+  padding: 5px;
+}
+
 .brand-name {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.new-products {
-  position: relative;
-}
+/* .new-products {
+} */
 
-.new-products > span {
+.new-products span {
   position: absolute;
-  background-color: black;
-  color: white;
-  margin: 15px;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
   padding: 10px;
   border-radius: 8px;
+  background-color: black;
+  color: white;
 }
 
 /* .product-icons-container {
 display: grid;
 grid-template-columns: 1fr;
 } */
-
-.product-card > .heart {
-  font-size: 1.5em;
-  background-color: blue;
-  margin-left: 370px;
+.heart-container {
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  right: 10px;
 }
+
+.heart-container i {
+  position: relative;
+  font-size: 1.8em;
+}
+
+/* .heart-icon {
+
+} */
 
 .store-information {
   display: flex;
@@ -269,20 +293,13 @@ footer {
   } */
 
   .search {
-    display: inline-block;
     flex-grow: 1;
-    /* margin-left: 20px; */
-  }
-
-  .search > input {
-    display: inline-block;
-    max-width: 70%;
   }
 
   .search-icons-container {
     /* display: inline-block; */
     /* flex-wrap: nowrap; */
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     /* align-items: flex-end; */
   }
 
@@ -316,6 +333,14 @@ footer {
   /* Skapar en två-kolumnsgrid */
   .product-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .new-products span {
+    top: 10px;
+  }
+  .heart-container {
+    bottom: 10px;
+    right: 10px;
   }
 
   .accordion {

@@ -24,8 +24,10 @@
         </div>
 
         <!-- Sökruta och knappar -->
-        <form class="search">
-          <input type="text" placeholder="Sök produkt" />
+        <form class="search" method="get">
+          <label for="search">
+            <input type="search" placeholder="Sök produkt" name="search" id="search"/>
+          </label>
           <div class="search-icons-container">
             <div class="search-icons">
               <a href="#"><i class="fa-solid fa-heart"></i></a>
@@ -78,21 +80,64 @@
 
       <!-- Start av Populära produkter -->
       <section class="product-grid"> 
+
         <article class="product-card">
+          <div class="position-container">
           <div class="new-products">
             <span>Nyhet</span>
           <a href="/product-details.html">
             <img src="https://placehold.co/400x600" alt="Foto på en svart T-shirt" width="400px" height="600px" />
           </a>
+          <div class="heart-container"_>
+          <a href="#" class="heart-icon"><i class="fa-solid fa-heart product-icons"></i></a>
         </div>
-
-        <!-- Hjärta - ikon -->
-        <div class="heart-container">
-          <span class="heart">
-            <a href="#"><i class="fa-solid fa-heart product-icons"></i></a>
-          </span>
         </div>
+      </div>
+          <div class="product-description-container">
+            <div class="product-description">
+              <h2>Svart T-shirt</h2>
+              <h2>199 sek</h2>
+            </div>
+            <div class="brand-name">
+              <p>Levis</p>
+            </div>
+            </div>
+        </article>
+
+
+        <article class="product-card">
+          <div class="position-container">
+          <a href="/product-details.html">
+            <img src="https://placehold.co/400x600" alt="Foto på en svart T-shirt" width="400px" height="600px" />
+          </a>
+          <div class="heart-container"_>
+          <a href="#" class="heart-icon"><i class="fa-regular fa-heart"></i></a>
+        </div>
+        </div>
+      </div>
+
+          <div class="product-description-container">
+            <div class="product-description">
+              <h2>Svart T-shirt</h2>
+              <h2>199 sek</h2>
+            </div>
+            <div class="brand-name">
+              <p>Levis</p>
+            </div>
+            </div>
+        </article>
         
+        <article class="product-card">
+          <div class="position-container">
+          <a href="/product-details.html">
+            <img src="https://placehold.co/400x600" alt="Foto på en svart T-shirt" width="400px" height="600px" />
+          </a>
+          <div class="heart-container"_>
+          <a href="#" class="heart-icon"><i class="fa-regular fa-heart"></i></a>
+        </div>
+        </div>
+      </div>
+
           <div class="product-description-container">
             <div class="product-description">
               <h2>Svart T-shirt</h2>
@@ -104,17 +149,17 @@
             </div>
         </article>
 
-        
         <article class="product-card">
+          <div class="position-container">
           <a href="/product-details.html">
             <img src="https://placehold.co/400x600" alt="Foto på en svart T-shirt" width="400px" height="600px" />
           </a>
-          <div class="icons">
-            <a href="#">
-              <i class="fa-solid fa-heart"></i>
-            </a>
-          </div>
-      
+          <div class="heart-container"_>
+          <a href="#" class="heart-icon"><i class="fa-regular fa-heart"></i></a>
+        </div>
+        </div>
+      </div>
+
           <div class="product-description-container">
             <div class="product-description">
               <h2>Svart T-shirt</h2>
@@ -122,19 +167,21 @@
             </div>
             <div class="brand-name">
               <p>Levis</p>
+            </div>
             </div>
         </article>
 
         <article class="product-card">
+          <div class="position-container">
           <a href="/product-details.html">
             <img src="https://placehold.co/400x600" alt="Foto på en svart T-shirt" width="400px" height="600px" />
           </a>
-          <div class="icons">
-            <a href="#">
-              <i class="fa-solid fa-heart"></i>
-            </a>
-          </div>
-      
+          <div class="heart-container"_>
+          <a href="#" class="heart-icon"><i class="fa-regular fa-heart"></i></a>
+        </div>
+        </div>
+      </div>
+
           <div class="product-description-container">
             <div class="product-description">
               <h2>Svart T-shirt</h2>
@@ -142,19 +189,21 @@
             </div>
             <div class="brand-name">
               <p>Levis</p>
+            </div>
             </div>
         </article>
 
         <article class="product-card">
+          <div class="position-container">
           <a href="/product-details.html">
             <img src="https://placehold.co/400x600" alt="Foto på en svart T-shirt" width="400px" height="600px" />
           </a>
-          <div class="icons">
-            <a href="#">
-              <i class="fa-solid fa-heart"></i>
-            </a>
-          </div>
-      
+          <div class="heart-container"_>
+          <a href="#" class="heart-icon"><i class="fa-regular fa-heart"></i></a>
+        </div>
+        </div>
+      </div>
+
           <div class="product-description-container">
             <div class="product-description">
               <h2>Svart T-shirt</h2>
@@ -163,38 +212,20 @@
             <div class="brand-name">
               <p>Levis</p>
             </div>
-        </article>
-    
-        <article class="product-card">
-          <a href="/product-details.html">
-            <img src="https://placehold.co/400x600" alt="Foto på en svart T-shirt" width="400px" height="600px" />
-          </a>
-          <div class="icons">
-            <a href="#">
-              <i class="fa-solid fa-heart"></i>
-            </a>
-          </div>
-      
-          <div class="product-description-container">
-            <div class="product-description">
-              <h2>Svart T-shirt</h2>
-              <h2>199 sek</h2>
-            </div>
-            <div class="brand-name">
-              <p>Levis</p>
             </div>
         </article>
 
         <article class="product-card">
+          <div class="position-container">
           <a href="/product-details.html">
             <img src="https://placehold.co/400x600" alt="Foto på en svart T-shirt" width="400px" height="600px" />
           </a>
-          <div class="icons">
-            <a href="#">
-              <i class="fa-solid fa-heart"></i>
-            </a>
-          </div>
-      
+          <div class="heart-container"_>
+          <a href="#" class="heart-icon"><i class="fa-regular fa-heart"></i></a>
+        </div>
+        </div>
+      </div>
+
           <div class="product-description-container">
             <div class="product-description">
               <h2>Svart T-shirt</h2>
@@ -202,18 +233,21 @@
             </div>
             <div class="brand-name">
               <p>Levis</p>
+            </div>
             </div>
         </article>
+
         <article class="product-card">
+          <div class="position-container">
           <a href="/product-details.html">
             <img src="https://placehold.co/400x600" alt="Foto på en svart T-shirt" width="400px" height="600px" />
           </a>
-          <div class="icons">
-            <a href="#">
-              <i class="fa-solid fa-heart"></i>
-            </a>
-          </div>
-      
+          <div class="heart-container"_>
+          <a href="#" class="heart-icon"><i class="fa-regular fa-heart"></i></a>
+        </div>
+        </div>
+      </div>
+
           <div class="product-description-container">
             <div class="product-description">
               <h2>Svart T-shirt</h2>
@@ -222,24 +256,6 @@
             <div class="brand-name">
               <p>Levis</p>
             </div>
-        </article>
-        <article class="product-card">
-          <a href="/product-details.html">
-            <img src="https://placehold.co/400x600" alt="Foto på en svart T-shirt" width="400px" height="600px" />
-          </a>
-          <div class="icons">
-            <a href="#">
-              <i class="fa-solid fa-heart"></i>
-            </a>
-          </div>
-      
-          <div class="product-description-container">
-            <div class="product-description">
-              <h2>Svart T-shirt</h2>
-              <h2>199 sek</h2>
-            </div>
-            <div class="brand-name">
-              <p>Levis</p>
             </div>
         </article>
       </section>
