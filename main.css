@@ -25,20 +25,13 @@
   padding: 10px;
 }
 
-/* header > div > img {
-} */
-
 /* Centrerar innehållet på sidan och sätter direktionen till kolumner istället för rader */
 main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
   gap: 10px;
 }
-
-/* .wrapper-content {
-} */
 
 h1,
 h2 {
@@ -88,13 +81,13 @@ img {
   padding: 5px;
 }
 
-.search-icons-container {
+.nav-icons-container {
   display: flex;
   gap: 10px;
   /* justify-content: space-around; */
 }
 
-.search-icons {
+.nav-icons {
   font-size: 1.5em;
 }
 
@@ -130,7 +123,6 @@ ul > a {
   align-items: center;
   flex-direction: column;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  /* flex-grow: 1; */
 }
 
 /* Styling för hero-bild. 
@@ -139,24 +131,11 @@ Max-width gör så att bilderna inte flödar över det horisontella utrymmet. */
   max-width: 100%;
 }
 
-/* .image-container {
-  display: flex;
-  jutify-content: flex-end;
-  position: relative;
-  z-index: 1;
-}
-
-.text-overlay {
-  position: absolute;
-  z-index: 2;
-} */
-
 /* Skapar en en-kolumnsgrid */
 .product-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
   margin: 10px;
 }
 
@@ -205,10 +184,7 @@ Ger ramar åt alla produkt-kort samt centrerar innehållet */
   justify-content: flex-start;
 }
 
-/* .new-products {
-} */
-
-.new-products span {
+.new-products > span {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -219,10 +195,6 @@ Ger ramar åt alla produkt-kort samt centrerar innehållet */
   color: white;
 }
 
-/* .product-icons-container {
-display: grid;
-grid-template-columns: 1fr;
-} */
 .heart-container {
   position: absolute;
   z-index: 1;
@@ -287,20 +259,9 @@ footer {
     max-width: 90%;
   }
 
-  /* header form > input,
-  header form > div {
-    display: inline-block;
-  } */
-
+  /* Header form */
   .search {
     flex-grow: 1;
-  }
-
-  .search-icons-container {
-    /* display: inline-block; */
-    /* flex-wrap: nowrap; */
-    /* justify-content: flex-end; */
-    /* align-items: flex-end; */
   }
 
   .break {
@@ -318,14 +279,6 @@ footer {
     gap: 10px;
     padding: 10px;
   }
-  /* 
-  nav > ul > li {
-    flex-direction: row;
-  } */
-
-  /* form {
-    display: block;
-  } */
 
   .hero > div {
     width: 100%;
@@ -335,9 +288,10 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
-  .new-products span {
+  .new-products > span {
     top: 10px;
   }
+
   .heart-container {
     bottom: 10px;
     right: 10px;
