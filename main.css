@@ -67,11 +67,12 @@ img {
   gap: 10px;
 }
 
-.search > input {
+input {
   display: inline;
   border-radius: 50px;
   font-size: 1.1em;
   padding: 5px;
+  display: inline-block;
 }
 
 .nav-icons-container {
@@ -115,7 +116,15 @@ ul > a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.hero-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* Styling för hero-bild. 
@@ -267,7 +276,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: row;
+    /* flex-direction: row; */
   }
 
   .header-image {
@@ -282,7 +291,7 @@ footer {
   }
 
   /* Header form */
-  .search {
+  .search-form {
     flex-grow: 1;
   }
 
@@ -367,20 +376,20 @@ footer {
 
 /* För skärmar som är större än eller lika med 1024px */
 @media (min-width: 1024px) {
-  /* Centrerar innehållet i hero-sektionen. */
-  /* .hero {
-  } */
-
-  /* .hero > div {
+  .hero > div {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: row-reverse;
-  } */
+    flex-wrap: nowrap;
+  }
 
-  /* .hero > div:nth-child() */
-  /* Styling för hero-bild. 
-Max-width gör så att bilderna inte flödar över det horisontella utrymmet. */
-  /* .hero > div img {
-    max-width: 100%;
-  } */
+  .hero-text-container {
+    flex-wrap: wrap;
+    width: 50%;
+    margin-top: 30px;
+  }
 
   /* Skapar en fyra-kolumnsgrid */
   .product-grid {
@@ -391,6 +400,9 @@ Max-width gör så att bilderna inte flödar över det horisontella utrymmet. */
     display: none;
   }
 
+  .store-information {
+    display: none;
+  }
   /* .spots-container {
     width: 100%;
     display: flex;
