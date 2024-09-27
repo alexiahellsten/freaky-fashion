@@ -391,23 +391,33 @@ footer {
     margin-top: 30px;
   }
 
-  /* Skapar en fyra-kolumnsgrid */
-  .product-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
+  /* Spots */
   .spots-container {
-    display: none;
-  }
-
-  .store-information {
-    display: none;
-  }
-  /* .spots-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-  } */
+  }
+
+  figure {
+    position: relative;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  /* Skapar en fyra-kolumnsgrid */
+  .product-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .store-information {
+    display: none;
+  }
 }
