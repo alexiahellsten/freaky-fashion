@@ -146,6 +146,13 @@ Max-width gör så att bilderna inte flödar över det horisontella utrymmet. */
   width: 100%;
 }
 
+/* Display: flex och flex-direction: column gör så att <a> elementet respekterar gridlayouten för föräldraelementet.
+Utan flex så bryts layouten. */
+.product-grid a {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Ger ramar åt alla produkt-kort samt centrerar innehållet */
 .product-card {
   display: flex;
@@ -418,6 +425,6 @@ footer {
   }
 
   .store-information {
-    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
