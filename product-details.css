@@ -1,28 +1,38 @@
 /*Importerar stil från*/
 @import "main.css";
 
-/* Importerar Google Fonten Jost */
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
-
-img {
-  width: 100%;
-}
-
+body,
 main {
   margin: 10px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .product-details {
   display: flex;
   flex-direction: column;
-  /* display: grid;
-  grid-template-columns: 1fr;
-  width: 100%; */
+  width: 100%;
+}
+
+.product-details img {
+  width: 100%;
 }
 
 .product-details h1 {
   margin-top: 20px;
   font-size: 2em;
+}
+
+.product-details h2 {
+  font-size: em;
+}
+
+.product-description-container h3 {
+  font-size: 1em;
+  padding: 10px;
 }
 
 .btn {
@@ -63,7 +73,135 @@ main {
   font-size: 1.2em;
 }
 
+.similar-products,
+.similar-products h2 {
+  display: none;
+}
+
 .accordion-body > nav > ul {
   text-align: left;
   margin-left: 0;
 }
+
+/* För skärmar som är större än eller lika med 640px */
+@media (min-width: 640px) {
+  .product-grid {
+    gap: 25px;
+  }
+
+  .chosen-product {
+    flex-direction: row;
+  }
+
+  .chosen-product * {
+    padding: 5px;
+  }
+
+  .chosen-product button {
+    width: 30%;
+    margin-left: 0;
+  }
+  .product-details img {
+    width: 100%;
+  }
+
+  .product-details h1 {
+    margin-top: 20px;
+    font-size: 2em;
+  }
+
+  .store-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+  }
+
+  .store-information > div {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .similar-products {
+    display: flex;
+    justify-content: center;
+  }
+
+  .similar-products > h2 {
+    padding: 15px;
+    display: block;
+  }
+
+  .accordion {
+    display: none;
+  }
+
+  .footer-nav {
+    font-size: 1em;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+    flex-wrap: no-wrap;
+  }
+
+  footer h3 {
+    font-size: 1.1em;
+  }
+
+  .container > nav > ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    background-color: rgb(223, 223, 223);
+    padding: 24px;
+  }
+}
+
+/* För skärmar som är större än eller lika med 1024px */
+/* @media (min-width: 1024px) {
+  .hero > div {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+
+  .hero-text-container {
+    flex-wrap: wrap;
+    width: 50%;
+    margin-top: 30px;
+  }
+
+  .spots-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  figure {
+    position: relative;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  /* Skapar en fyra-kolumnsgrid */
+/* .product-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .store-information {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+} */
