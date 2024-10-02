@@ -160,48 +160,16 @@ main {
 }
 
 /* För skärmar som är större än eller lika med 1024px */
-/* @media (min-width: 1024px) {
-  .hero > div {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
+@media (min-width: 1024px) {
+  .product-description-container {
+    width: 40%;
   }
 
-  .hero-text-container {
-    flex-wrap: wrap;
-    width: 50%;
-    margin-top: 30px;
-  }
-
-  .spots-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-
-  figure {
-    position: relative;
-  }
-
-  figcaption {
-    position: absolute;
-    top: 40%;
-    left: 20%;
-    font-size: 2em;
-    font-weight: bold;
-  }
-
-  /* Skapar en fyra-kolumnsgrid */
-/* .product-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  .btn button {
+    width: 20%;
   }
 
   .store-information {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-} */
+}
