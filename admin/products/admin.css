@@ -1,0 +1,94 @@
+@import "main.css";
+
+/* Importerar Google Fonten Jost */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+
+h1 {
+  background-color: #333;
+  color: white !important;
+  padding: 10px;
+  margin-bottom: 0 !important;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  margin-top: 30px !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+article {
+  padding: 20px;
+  width: 70%;
+}
+
+article > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+}
+
+aside {
+  background-color: lightgray;
+  color: black;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  height: 90vh;
+  width: 200px;
+}
+
+button {
+  border-radius: 8px !important;
+}
+
+table {
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  border-bottom: 1px solid black !important;
+}
+
+td,
+th {
+  border-right: 1px solid black !important;
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #dbdbdb;
+}
