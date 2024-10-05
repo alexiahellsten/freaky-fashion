@@ -58,6 +58,32 @@ article > div {
   padding: 10px;
 }
 
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 30px;
+}
+
+textarea {
+  width: 50%;
+}
+
+label {
+  display: block !important;
+}
+
+.form-group label {
+  display: inline-block !important;
+}
+
 aside {
   background-color: lightgray;
   color: black;
