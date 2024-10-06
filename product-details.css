@@ -105,9 +105,22 @@ main {
     width: 100%;
   }
 
+  .chosen-product p {
+    width: 50%;
+  }
+
   .product-details h1 {
     margin-top: 20px;
     font-size: 2em;
+  }
+
+  .product-description-container {
+    width: 100%;
+  }
+
+  .product-description {
+    display: flex;
+    justify-content: space-between;
   }
 
   .store-information {
@@ -161,10 +174,6 @@ main {
 
 /* För skärmar som är större än eller lika med 1024px */
 @media (min-width: 1024px) {
-  .product-description-container {
-    width: 40%;
-  }
-
   .btn button {
     width: 20%;
   }

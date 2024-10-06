@@ -29,7 +29,7 @@
         <h1>Administration</h1>
       </header>
 
-      <section class="products">
+      <div class="products">
         <aside class="sidebar">
           <h3>Produkter</h3>
         </aside>
@@ -39,7 +39,7 @@
             <h2>Ny produkt</h2>
 
             <div class="form">
-              <form action="/send" method="post">
+              <form>
                 <div>
                   <label for="name">Namn</label>
                   <input type="text" id="name" name="name" />
@@ -48,21 +48,25 @@
                 <div>
                   <label for="description">Beskrivning</label>
                   <textarea
-                    type="textarea"
                     id="description"
                     name="description"
-                    cols="1" rows="5"
-                  /></textarea>
-  
+                    cols="1"
+                    rows="5"
+                  ></textarea>
                 </div>
 
                 <div>
-                  <label for="image" id="image" name="image">Bild</label>
-                  <input type="file" accept="image/*,.pdf" />
+                  <label for="image">Bild</label>
+                  <input
+                    type="file"
+                    id="image"
+                    name="image"
+                    accept="image/*,.pdf"
+                  />
                 </div>
 
                 <div>
-                  <label for="SKU">SKU</label>
+                  <label for="sku">SKU</label>
                   <input type="text" id="sku" name="sku" />
                 </div>
 
@@ -95,13 +99,13 @@
                 </div>
 
                 <div>
-                  <input type="submit" value="Lägg till" action="/add" />
+                  <input type="submit" value="Lägg till" />
                 </div>
               </form>
             </div>
           </div>
         </article>
-      </section>
+      </div>
     </main>
   </body>
 </html>

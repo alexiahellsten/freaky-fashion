@@ -158,6 +158,10 @@ Utan flex så bryts layouten. */
   position: relative;
 }
 
+.product-link {
+  display: inline-block;
+}
+
 article > img {
   max-width: 100%;
 }

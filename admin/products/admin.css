@@ -38,7 +38,7 @@ a {
   color: black !important;
 }
 
-section {
+.products {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -94,10 +94,6 @@ aside {
   width: 200px;
 }
 
-button {
-  border-radius: 8px !important;
-}
-
 table {
   border: 1px solid black;
   width: 100%;
@@ -106,6 +102,7 @@ table {
 
 th {
   border-bottom: 1px solid black !important;
+  background-color: #b1b1b1;
 }
 
 td,
