@@ -5,7 +5,8 @@ A school project of a fictional e-commerce site called "Freaky Fashion" built wi
 Features some funky CSS since I wanted to override Bootstraps standard styling without overriding it directly in the HTML.
 
 **How to run:**
-1. Open VSCode
-2. Download and run Live server
+1. Download as ZIP or clone the repo
+2. Open VSCode
+3. Download and run Live server
 
 You can go to the "admin" pages by typing in: `/admin/products/index.html` or `/admin/products/new.html` in the browser after the port number.
