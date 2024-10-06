@@ -48,11 +48,6 @@ a {
   text-decoration: none !important;
   color: black !important;
 }
-/* Min-height gör att innehållet anpassar sig efter ytan
-om det inte är minimum 300px */
-/* header {
-  min-height: 300px;
-} */
 
 img {
   max-width: 100%;
@@ -78,7 +73,6 @@ input {
 .nav-icons-container {
   display: flex;
   gap: 10px;
-  /* justify-content: space-around; */
 }
 
 .nav-icons {
@@ -100,7 +94,11 @@ ul > a {
   font-size: 1.2em;
 }
 
-/* Slut på styling för navigationen */
+.animation:hover {
+  transform: scale(1.3);
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+}
 
 /* Centrerar innehållet i hero-sektionen. */
 .hero {
@@ -137,7 +135,6 @@ Max-width gör så att bilderna inte flödar över det horisontella utrymmet. */
   display: none;
 }
 
-/* Skapar en en-kolumnsgrid */
 .product-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -146,7 +143,8 @@ Max-width gör så att bilderna inte flödar över det horisontella utrymmet. */
   width: 100%;
 }
 
-/* Display: flex och flex-direction: column gör så att <a> elementet respekterar gridlayouten för föräldraelementet.
+/* Display: flex och flex-direction: column gör så att <a>-
+elementet respekterar gridlayouten för föräldraelementet.
 Utan flex så bryts layouten. */
 .product-grid a {
   display: flex;
@@ -158,7 +156,6 @@ Utan flex så bryts layouten. */
   display: flex;
   flex-direction: column;
   position: relative;
-  /* margin: 10px; */
 }
 
 article > img {
@@ -203,7 +200,6 @@ article > img {
   color: white;
   border-radius: 8px;
 }
-/* SLUT PÅ MIN LÖSNING */
 
 .text-block {
   position: relative;
@@ -216,7 +212,6 @@ article > img {
 }
 
 /*Start på hjärta */
-
 .heart-container {
   position: relative;
 }
@@ -232,6 +227,10 @@ article > img {
   bottom: 10px;
   right: 10px;
   z-index: 1;
+}
+
+.fifth-heart-solid {
+  display: none;
 }
 
 .store-information {
@@ -283,11 +282,9 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    /* flex-direction: row; */
   }
 
   .header-image {
-    /* justify-content: flex-start; */
     display: inline-block;
     max-width: 40%;
     flex-grow: 1;
@@ -302,11 +299,10 @@ footer {
     flex-grow: 1;
   }
 
+  /* Gör så att break-divven tar upp en hel rad */
   .break {
     width: 100%;
   }
-  /* .search-icons-container > a {
-  } */
 
   nav {
     width: 100%;
@@ -321,7 +317,7 @@ footer {
   .hero > div {
     width: 100%;
   }
-  /* Skapar en två-kolumnsgrid */
+
   .product-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -347,11 +343,6 @@ footer {
     margin: 10px;
     padding: 15px;
   }
-
-  /* Här vill jag göra så att alla li .store-information > div tar upp lika mycket plats */
-  /* .store-information > div > ul > li {
-  margin-left: 0;
-  } */
 
   .accordion {
     display: none;
@@ -419,12 +410,19 @@ footer {
     font-weight: bold;
   }
 
-  /* Skapar en fyra-kolumnsgrid */
   .product-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .store-information {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .fifth-heart-regular {
+    display: none;
+  }
+
+  .fifth-heart-solid {
+    display: inline-block;
   }
 }
