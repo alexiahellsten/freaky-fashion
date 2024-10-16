@@ -94,6 +94,8 @@ aside {
   width: 200px;
 }
 
+/* Border-collapse: collapse gör så att ramarna på kanterna på de intilliggande cellerna
+och själva tabellen komprimeras till en enda ram istället för att behålla utrymmet mellan dem */
 table {
   border: 1px solid black;
   width: 100%;

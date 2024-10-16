@@ -193,6 +193,7 @@ article > img {
   justify-content: flex-start;
 }
 
+/* En container för nyhetsknappen */
 .new-container {
   position: absolute;
   top: 10px;

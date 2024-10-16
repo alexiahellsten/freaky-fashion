@@ -19,7 +19,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <title>Svart T-shirt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Kassan</title>
   </head>
   <body>
     <header>
@@ -75,101 +76,67 @@
         </ul>
       </nav>
     </header>
-
+    <!-- Slut på header -->
     <main>
-      <div class="product-details">
-        <article class="product-card chosen-product">
-          <div class="image-container">
-            <img
-              src="
-              https://placehold.co/400x600.png
-            "
-              alt="Bild på en svart T-shirt"
-            />
-          </div>
+      <!-- Start av kassa med Tailwind -->
+      <section class="checkout min-w-full">
+        <div class="flex justify-center">
+          <h2 class="text-2xl font-medium">Kassan</h2>
+        </div>
 
-          <div class="product-description-container">
-            <h2>Svart T-shirt</h2>
-            <p>Levis</p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
-              omnis placeat inventore at provident quos tenetur quibusdam modi
-              ab ad necessitatibus quas, quisquam impedit quo pariatur doloribus
-              nobis odio tempora.
-            </p>
-            <p>199 sek</p>
-            <div class="btn d-flex justify-content-start">
-              <button>Lägg i varukorg</button>
+        <div class="sm:hidden flex flex-col justify-center min-w-full">
+          <div class="flex flex-col space-x-0 border border-black p-2 my-1">
+            <div class="flex">
+              <span class="grow font-medium">1 x Svart T-shirt</span>
+              <span class="grow-1 font-medium">199 sek</span>
             </div>
+            <span class="text-neutral-500 text-sm">199 sek</span>
           </div>
-        </article>
 
-        <div class="similar-products">
-          <h2>Liknande produkter</h2>
+          <div class="flex flex-col space-x-0 border border-black p-2">
+            <div class="flex">
+              <span class="grow font-medium">2 x Vit T-shirt</span>
+              <span class="grow-1 font-medium">199 sek</span>
+            </div>
+            <span class="text-neutral-500 text-sm">199 sek</span>
+          </div>
         </div>
 
-        <div class="product-grid similar-products">
-          <article class="product-card">
-            <a href="/product-details.html">
-              <img
-                src="
-                https://placehold.co/400x600.png
-              "
-                alt="Bild på en svart T-shirt"
-              />
-              <div class="product-description-container">
-                <div class="product-description">
-                  <h3>Svart T-shirt</h3>
-                  <span class="product-price">199 sek</span>
-                </div>
-                <div class="brand-name">
-                  <p>Levis</p>
-                </div>
-              </div>
-            </a>
-          </article>
 
-          <article class="product-card">
-            <a href="/product-details.html">
-              <img
-                src="
-                https://placehold.co/400x600.png
-              "
-                alt="Bild på en svart T-shirt"
-              />
-              <div class="product-description-container">
-                <div class="product-description">
-                  <h3>Svart T-shirt</h3>
-                  <h3>199 sek</h3>
-                </div>
-                <div class="brand-name">
-                  <p>Levis</p>
-                </div>
-              </div>
-            </a>
-          </article>
+        <table class="hidden sm:table m-auto min-w-full table-auto border border-solid border-black">
+          <tr class="table-row text-left bg-neutral-400 border border-solid border-black divide-x divide-black">
+            <th>Produkt</th>
+            <th>Antal</th>
+            <th>Pris</th>
+            <th>Totalt</th>
+          </tr>
+          <tr class="table-row bg-neutral-200 divide-x divide-black">
+            <td>Svart T-Shirt</td>
+            <td>1</td>
+            <td>199 kr</td>
+            <td>199 kr</td>
+          </tr>
+          <tr class="table-row divide-x divide-black">
+            <td>Vit T-Shirt</td>
+            <td>2</td>
+            <td>199 kr</td>
+            <td>398 kr</td>
+          </tr>
+          <tr class="table-row bg-neutral-200 divide-x divide-black">
+            <td>...</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
 
-          <article class="product-card">
-            <a href="/product-details.html">
-              <img
-                src="
-                https://placehold.co/400x600.png
-              "
-                alt="Bild på en svart T-shirt"
-              />
-              <div class="product-description-container">
-                <div class="product-description">
-                  <h3>Svart T-shirt</h3>
-                  <h3>199 sek</h3>
-                </div>
-                <div class="brand-name">
-                  <p>Levis</p>
-                </div>
-              </div>
-            </a>
-          </article>
-        </div>
-      </div>
+        <article class="checkout-form">
+        <h3 class="text-center sm:text-left text-xl font-medium">Kunduppgifter</h3>
+        <form>
+
+        </form>
+      </section>
+      <!-- Slut på kassa -->
 
       <!-- Start av info-sektion -->
       <div class="store-information">
