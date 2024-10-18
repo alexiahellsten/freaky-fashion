@@ -84,7 +84,7 @@
           <h2 class="text-2xl font-medium">Kassan</h2>
         </div>
 
-        <div class="sm:hidden flex flex-col justify-center min-w-full">
+        <div class="sm:hidden my-6 flex flex-col justify-center min-w-full">
           <div class="flex flex-col space-x-0 border border-black p-2 my-1">
             <div class="flex">
               <span class="grow font-medium">1 x Svart T-shirt</span>
@@ -102,8 +102,7 @@
           </div>
         </div>
 
-
-        <table class="hidden sm:table m-auto min-w-full table-auto border border-solid border-black">
+        <table class="sm:table sm:my-6 sm:mx-4 lg:mx-6 hidden min-w-full table-auto border border-solid border-black">
           <tr class="table-row text-left bg-neutral-400 border border-solid border-black divide-x divide-black">
             <th>Produkt</th>
             <th>Antal</th>
@@ -130,11 +129,51 @@
           </tr>
         </table>
 
-        <article class="checkout-form">
-        <h3 class="text-center sm:text-left text-xl font-medium">Kunduppgifter</h3>
+        <!-- Checkout-form -->
+        <article class="sm:mx-4 lg:mx-6 my-6 checkout-form flex flex-col min-w-full">
+        <h3 class="text-center text-xl font-medium sm:text-left lg:text-left" id="text-left">Kunduppgifter</h3>
         <form>
+          <div class="sm:flex sm:gap-2">
+          <div class="sm:basis-1/2 lg:basis-1/4 flex flex-col">
+            <label for="firstname" class="sm:block">Förnamn</label>
+            <input type="text" id="firstname" name="firstname" class="border border-black rounded-none"/>
+          </div>
 
+          <div class="sm:basis-1/2 lg:basis-1/4 flex flex-col">
+            <label for="lastname" class="sm:block">Efternamn</label>
+            <input type="text" id="lastname" name="lastname" class="border border-black rounded-none"/>
+          </div>
+        </div>
+
+          <div class="flex flex-col sm:w-1/2 lg:w-1/4">
+            <label for="email">E-post</label>
+            <input type="email" id="email" name="email" class="border border-black rounded-none"/>
+          </div>
+         
+          <div>
+            <fieldset class="flex flex-col my-4">
+              <legend>Adress</legend>
+              <label for="street">Gata</label>
+              <input type="text" id="street" name="street" class="sm:w-full lg:w-3/4 border border-black rounded-none" />
+
+              <label for="postalcode">Postnummer</label>
+              <input type="number" id="postalcode" name="postalcode" class="w-1/2 sm:w-1/4 border border-black rounded-none"/>
+
+              <label for="city">Stad</label>
+              <input type="text" id="city" name="city" class="w-full sm:w-1/2 lg:w-2/5 border border-black rounded-none" />
+            </fieldset>
+          </div>
+
+          <div class="my-4">
+            <input type="checkbox" id="newsletter" name="newsletter"/>
+            <label for="newsletter">Jag vill ta emot nyhetsbrev</label>
+          </div>
+
+          <div class="flex justify-center min-w-full">
+            <button type="submit" class="border border-black rounded-none px-4 py-1">Köp
+          </div>
         </form>
+        <!-- Slut på checkout form -->
       </section>
       <!-- Slut på kassa -->
 
